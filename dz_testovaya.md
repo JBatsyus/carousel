@@ -52,7 +52,8 @@ DOM (Document Object Model, объектная модель документа)-
 
 Все элементы label внутри этой таблицы (их три)
 
-document.querySelectorAll("td#age-list label")
+document.querySelectorAll("td#age-list label") или
+document.querySelectorAll('#age-list label')
 
 Форму form с именем name="search"
 
