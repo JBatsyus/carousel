@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карусель</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 30px;
+            background: rgba(221, 181, 181, 0.548);
+        }
+
+
+        button {
+            background: rgb(114, 96, 96);
+            border: 1px solid rgb(129, 116, 116);
+            color: #fff;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 20px;
+
+        }
+
+        button:hover {
+            background: rgb(49, 100, 141);
+        }
+
+        .but {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .carousel {
+            border: 2px solid rgb(250, 241, 241);
+            width: 256px;
+            height: 256px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .carousel-inner {
+            width: 1024px;
+            height: 256px;
+            display: flex;
+            background: rgba(199, 196, 159, 0.616);
+            position: relative;
+            left: 0;
+            transition: all ease 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <img src="./imgs/cat.png" alt="котик">
+                <img src="./imgs/cc.png" alt="котик и ниточки">
+                <img src="./imgs/ccc.png" alt="котик на чилле">
+                <img src="./imgs/cccc.png" alt="голод">
+                <img src="./imgs/Recycle.png" alt="котодзен">
+                <img src="./imgs/rr.png" alt="котошар">
+            </div>
+        </div>
+        <div class="but">
+            <button class="prev">Назад</button>
+            <button class="next">Вперед</button>
+        </div>
+    </div>
+    <script src="gallery.js"></script>
+</body>
+
+</html>
