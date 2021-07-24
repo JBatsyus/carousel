@@ -8,7 +8,16 @@
     <title>Document</title>
     <script src="/calc.js"></script>
     <style>
-        button, #but {
+        .calc {
+            max-width: 300px;
+            margin: 100px auto;
+            padding: 30px;
+            background: rgba(221, 181, 181, 0.548);
+            border-radius: 10px;
+        }
+
+        button,
+        #but {
             min-width: 100px;
             padding: 10px;
             margin: 10px;
@@ -19,23 +28,34 @@
             font-size: 15px;
 
         }
+
+        #n1,
+        #n2,
+        #out {
+            width: 150px;
+            height: 30px;
+            margin: 10px;
+            border-radius: 5px;
+
+        }
     </style>
 </head>
 
 <body>
+    <div class="calc">
 
-    <p>Введите число1: <input type="text" id="n1"> </p>
-    <p>Введите число2: <input type="text" id="n2"> </p>
-    <button onclick="plus()"> Сложить </button>
-    <button onclick="subtraction()"> Вычесть </button>
-    <button onclick="multiplication()"> Умножить </button>
-    <button onclick="division()"> Разделить </button>
+        <p> <input type="text" id="n1" placeholder="Введите первое число"> </p>
+        <p> <input type="text" id="n2" placeholder="Введите второе число"> </p>
+        <button onclick="plus()"> Сложить </button>
+        <button onclick="subtraction()"> Вычесть </button>
+        <button onclick="multiplication()"> Умножить </button>
+        <button onclick="division()"> Разделить </button>
 
-    <hr>
-    <form id="myForm">
-        <div>Результат <input type="text" id="out"></div>
-        <input type="button" onclick="myFunction()" value="Очистить" id="but">
-    </form>
+        <hr>
+        <form id="myForm">
+            <div>Результат <input type="text" id="out"></div>
+            <input type="button" onclick="myFunction()" value="Очистить" id="but">
+        </form>
 
-
+    </div>
 </body>
