@@ -41,3 +41,6 @@ function division () {
 function myFunction() {
     document.getElementById("myForm").reset();
 }
+function myС() {
+    document.getElementById("myCleen").reset();
+}

@@ -17,6 +17,19 @@
         }
 
         button,
+        #butt{
+            min-width: 50px;
+            padding: 10px;
+            margin: 10px;
+            appearance: none;
+            border-radius: 10px;
+            background: #9ac0c7;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+
+        }
+       
         #but {
             min-width: 100px;
             padding: 10px;
@@ -43,14 +56,17 @@
 
 <body>
     <div class="calc">
-
+        <form id="myCleen">
         <p> <input type="text" id="n1" placeholder="Введите первое число"> </p>
         <p> <input type="text" id="n2" placeholder="Введите второе число"> </p>
-        <button onclick="plus()"> Сложить </button>
-        <button onclick="subtraction()"> Вычесть </button>
-        <button onclick="multiplication()"> Умножить </button>
-        <button onclick="division()"> Разделить </button>
-
+        <input type="button" onclick="myС()" value="С" id="butt">
+    </form>
+    
+        <button onclick="plus()"> + </button>
+        <button onclick="subtraction()"> - </button>
+        <button onclick="multiplication()"> * </button>
+        <button onclick="division()"> / </button>
+        
         <hr>
         <form id="myForm">
             <div>Результат <input type="text" id="out"></div>
